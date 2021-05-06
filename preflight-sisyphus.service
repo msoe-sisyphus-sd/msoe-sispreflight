@@ -1,0 +1,11 @@
+[Unit]
+Description=Make everything OK before sisyphus starts
+
+
+[Service]
+ExecStart=/home/pi/sis_recovery/scripts/recovery_check.sh
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
+

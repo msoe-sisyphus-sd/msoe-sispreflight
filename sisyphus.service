@@ -1,0 +1,16 @@
+[Unit]
+Description=All Sisyphus Processes
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+After=preflight-sisyphus.service
+
+[Service]
+ExecStart=/home/pi/sisbot-server/sisbot/startup.sh
+# todo - write ExecStop
+Type=simple
+
+
+[Install]
+WantedBy=multi-user.target
+
