@@ -3,7 +3,6 @@ This repo doesn't have very much in it, because it's just a safe place for some 
 
 * the sisyphus.service file should be copied to /etc/systemd/system/
 * the preflight-sisyphus.service file should be copied to /etc/systemd/system
-* the env variable in the environment file should be copied into /etc/environment (or can be placed there if none exists)
 
 After putting the service files in place, test them out:
 
